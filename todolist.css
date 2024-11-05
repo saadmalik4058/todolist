@@ -1,0 +1,38 @@
+.input{
+    display: flex;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 16, 49);
+}
+.container h1{
+    color: white;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text ul {
+    background-color: bisque;
+   padding: 6px 33px;
+   position: relative;
+   text-align:start;
+
+}
+.text ul i {
+    position: absolute;
+    right: 45px;
+    text-align: start;
+    cursor: pointer;
+
+}
+#taskTable {
+    margin-top: 10px;
+    color: white;
+}
+#taskTable tr th {
+padding: 3px 30px;
+}

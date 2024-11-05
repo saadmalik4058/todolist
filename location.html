@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .btnClr {
+    background-color: white;
+    color: black;
+}
+.mybtn {
+    padding: 12px 14px;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid white;
+    background-color: white;
+}
+.bb{
+    background-color: black;
+    color: white;
+
+}
+</style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="sidebar">
+            <div class="tasklocation">
+                <button id="btn3" class="mybtn btnClr " onclick="showtasksection()">Tasks</button>
+                <button id="btn4" class="mybtn bb" onclick="navigation()">Location</button>
+            </div>
+            <div>
+                <button class="button loginbtn" onclick="logout()">logout</button>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="d">
+                <button class="button" style="padding: 6px 20px;"  onclick="showcard()">Checkin</button>
+            </div>
+
+            <div class="tasksection">
+                <h1>Current Location</h1>
+
+                <ul class="tasklist" id="Incompleted"></ul>
+            </div>
+
+            <div class="tasksection">
+                <h1>Previious Location</h1>
+
+                <ul class="tasklist" id="completed"></ul>
+            </div>
+        </div>
+      
+
+    </div>
+
+    <div class="md" id="md">
+        <div class="card">
+            <h1>Check in</h1>
+            <div class="summary">
+                <input type="text" placeholder="City" class="i" id="input">
+            </div>
+            <div class="description">
+                <input type="text" placeholder="Country" class="i" id="input2">
+            </div>
+            <div class="date">
+                <input type="datetime-local" placeholder="Date" class="i" id="input3">
+            </div>
+            <button class="button" style="padding: 6px 88px;" id="btn">Save</button>
+            <button class="button" id="cancelbtn" onclick="cancel()">Cancel</button>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
